@@ -45,5 +45,12 @@ class APIManager: AFHTTPRequestOperationManager {
         )
     }
     
-    func 
+    func createUser(username: String, password: String, email: String, success: (AFHTTPRequestOperation!, AnyObject!) -> Void, failure: ((AFHTTPRequestOperation!, NSError!) -> Void)?) {
+        self.POST(
+            API_KEY.stringByAppendingString("/sessions.json"),
+            parameters: ["username": username, "password": password, "email": email, "agree_to_terms": true],
+            success: success,
+            failure: failure
+        )
+    }
 }

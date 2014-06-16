@@ -12,7 +12,7 @@
 		2AD22FBD194DF7DE0059718E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD22FBC194DF7DE0059718E /* Images.xcassets */; };
 		2AD22FC9194DF7DE0059718E /* EightTracksSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD22FC8194DF7DE0059718E /* EightTracksSwiftTests.swift */; };
 		2AD22FD3194DF84B0059718E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AD22FD2194DF84B0059718E /* MainStoryboard.storyboard */; };
-		2AF0FAE7194F074300644D7B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF0FAE6194F074300644D7B /* Config.swift */; };
+		2AF0FAE9194F113400644D7B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF0FAE8194F113400644D7B /* Config.swift */; };
 		2AF7F0A1194EEBB900A3A49E /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF7F0A0194EEBB900A3A49E /* TestViewController.swift */; };
 		A34E59C1CA3A4D6C85190153 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD88428D50E54D7683AD3364 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -38,7 +38,7 @@
 		2AD22FC8194DF7DE0059718E /* EightTracksSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EightTracksSwiftTests.swift; sourceTree = "<group>"; };
 		2AD22FD2194DF84B0059718E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		2AD22FD5194DFB6A0059718E /* EightTracksSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EightTracksSwift-Bridging-Header.h"; sourceTree = "<group>"; };
-		2AF0FAE6194F074300644D7B /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		2AF0FAE8194F113400644D7B /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		2AF7F0A0194EEBB900A3A49E /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		403DA32F2F9B47F2B73FA194 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		BD88428D50E54D7683AD3364 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,7 +100,7 @@
 			children = (
 				2AD22FB9194DF7DE0059718E /* Info.plist */,
 				2AD22FD5194DFB6A0059718E /* EightTracksSwift-Bridging-Header.h */,
-				2AF0FAE6194F074300644D7B /* Config.swift */,
+				2AF0FAE8194F113400644D7B /* Config.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -273,7 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A0CC1EF194ED94400EF48FF /* APIManager.swift in Sources */,
-				2AF0FAE7194F074300644D7B /* Config.swift in Sources */,
+				2AF0FAE9194F113400644D7B /* Config.swift in Sources */,
 				2AF7F0A1194EEBB900A3A49E /* TestViewController.swift in Sources */,
 				2AD22FBB194DF7DE0059718E /* AppDelegate.swift in Sources */,
 			);

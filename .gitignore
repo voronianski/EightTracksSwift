@@ -26,4 +26,4 @@ DerivedData
 # Files
 .DS_Store
 *.log
-**/*/config.swift
+**/*/Config.swift
