@@ -1,5 +1,5 @@
 //
-//  TestViewController.swift
+//  WelcomeViewController.swift
 //  EightTracksSwift
 //
 //  Created by Dmitri Voronianski on 16.06.14.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TestViewController: UIViewController {
+class WelcomeViewController: UIViewController {
 
     init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -21,30 +21,6 @@ class TestViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let api = APIManager.sharedInstance
-        
-        /*func success(operation: AFHTTPRequestOperation!, data: AnyObject!) {
-            println(data)
-        }
-        func failure(operation: AFHTTPRequestOperation!, error: NSError!) {
-            println(error)
-        }
-        api.login("dodo", password: "12345", success: success, { (operation: AFHTTPRequestOperation?, error: NSError?) in
-                println(error)
-            })*/
-        
-        
-        func test(txt: String, resolve: (name: String) -> Void) {
-            resolve(name: "\(txt) Dodo")
-        }
-        
-        test("hello", { (name: String) in
-            println(name)
-            })
-        
-        //m.someMethod()
-        //d.someMethod()
 
         // Do any additional setup after loading the view.
     }
