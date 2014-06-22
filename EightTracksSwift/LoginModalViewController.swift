@@ -10,6 +10,10 @@ import UIKit
 
 class LoginModalViewController: UIViewController {
     
+    @IBOutlet var usernameField : UITextField
+    @IBOutlet var passwordField : UITextField
+    @IBOutlet var loginButton : UIButton
+    
     var transitioningBackgroundView = UIView()
     
     init(coder aDecoder: NSCoder!) {
@@ -23,14 +27,19 @@ class LoginModalViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.customizeView()
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        //var gestureRecognizer =
+        var gestureRecognizer = UITapGestureRecognizer()
+        transitioningBackgroundView.addGestureRecognizer(gestureRecognizer)
+        gestureRecognizer.addTarget(self, action: Selector("dismiss"))
+        
+        transitioningBackgroundView.userInteractionEnabled = true
+        usernameField.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,7 +47,40 @@ class LoginModalViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        usernameField.resignFirstResponder()
+    }
+    
+    func customizeView() {
+        let radius = 3.0
+        
+        let paddingEmail = UIView(frame: CGRectMake(0, 0, 10, 38))
+        usernameField.leftView = paddingEmail
+        usernameField.leftViewMode = UITextFieldViewMode.Always
+        usernameField.layer.cornerRadius = radius
+        
+        let paddingPass = UIView(frame: CGRectMake(0, 0, 10, 38))
+        passwordField.leftView = paddingPass
+        passwordField.leftViewMode = UITextFieldViewMode.Always
+        passwordField.layer.cornerRadius = radius
+        
+        loginButton.layer.cornerRadius = radius
+    }
+    
+    func dismiss() {
+        self.dismissModalViewControllerAnimated(true)
+    }
+    
+    @IBAction func login(sender : AnyObject) {
+        // api manager request to 8tracks
+    }
 
+    @IBAction func cancel(sender : AnyObject) {
+        self.dismiss()
+    }
+    
     /*
     // #pragma mark - Navigation
 

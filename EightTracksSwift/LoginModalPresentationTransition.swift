@@ -26,10 +26,8 @@ class LoginModalPresentationTransition: NSObject, UIViewControllerAnimatedTransi
         containerView.addSubview(toVC.transitioningBackgroundView)
         containerView.addSubview(toVC.view)
         
-        toVC.view.backgroundColor = UIColor.whiteColor()
-        toVC.view.alpha = 0.95
-        
-        let toViewFrame = CGRectMake(0, 0, 280, 340)
+        let toViewFrame = CGRectMake(0, 0, 280, 240)
+        toVC.view.layer.cornerRadius = 5.0
         toVC.view.frame = toViewFrame
         
         let finalCenter = CGPointMake(fromVC.view.bounds.size.width / 2, toViewFrame.size.height / 2 + 25)

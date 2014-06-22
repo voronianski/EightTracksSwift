@@ -17,6 +17,7 @@
 		2AD22FBD194DF7DE0059718E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD22FBC194DF7DE0059718E /* Images.xcassets */; };
 		2AD22FC9194DF7DE0059718E /* EightTracksSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD22FC8194DF7DE0059718E /* EightTracksSwiftTests.swift */; };
 		2AD22FD3194DF84B0059718E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AD22FD2194DF84B0059718E /* MainStoryboard.storyboard */; };
+		2AE7EDFF195777C2006BDBA0 /* LoginModalDismissalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE7EDFE195777C2006BDBA0 /* LoginModalDismissalTransition.swift */; };
 		2AF0FAE9194F113400644D7B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF0FAE8194F113400644D7B /* Config.swift */; };
 		2AF70BDA195220F300D8E904 /* ConfigSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF70BD9195220F300D8E904 /* ConfigSample.swift */; };
 		2AF7F0A1194EEBB900A3A49E /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF7F0A0194EEBB900A3A49E /* TestViewController.swift */; };
@@ -49,6 +50,7 @@
 		2AD22FC8194DF7DE0059718E /* EightTracksSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EightTracksSwiftTests.swift; sourceTree = "<group>"; };
 		2AD22FD2194DF84B0059718E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		2AD22FD5194DFB6A0059718E /* EightTracksSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EightTracksSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		2AE7EDFE195777C2006BDBA0 /* LoginModalDismissalTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModalDismissalTransition.swift; sourceTree = "<group>"; };
 		2AF0FAE8194F113400644D7B /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		2AF70BD9195220F300D8E904 /* ConfigSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigSample.swift; sourceTree = "<group>"; };
 		2AF7F0A0194EEBB900A3A49E /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				2A8823CE194F5830006E02F4 /* WelcomeViewController.swift */,
 				2A59BCE21955F4280098E282 /* LoginModalViewController.swift */,
 				2A8B075A195740E900DF1D4A /* LoginModalPresentationTransition.swift */,
+				2AE7EDFE195777C2006BDBA0 /* LoginModalDismissalTransition.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				2AF0FAE9194F113400644D7B /* Config.swift in Sources */,
 				2A59BCE31955F4280098E282 /* LoginModalViewController.swift in Sources */,
 				2AF70BDA195220F300D8E904 /* ConfigSample.swift in Sources */,
+				2AE7EDFF195777C2006BDBA0 /* LoginModalDismissalTransition.swift in Sources */,
 				2AF7F0A1194EEBB900A3A49E /* TestViewController.swift in Sources */,
 				2A8B075B195740E900DF1D4A /* LoginModalPresentationTransition.swift in Sources */,
 				2AD22FBB194DF7DE0059718E /* AppDelegate.swift in Sources */,

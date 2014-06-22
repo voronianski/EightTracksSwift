@@ -41,6 +41,10 @@ class WelcomeViewController: UIViewController, UIViewControllerTransitioningDele
     func animationControllerForPresentedController(presented: UIViewController!, presentingController presenting: UIViewController!, sourceController source: UIViewController!) -> UIViewControllerAnimatedTransitioning! {
         return LoginModalPresentationTransition()
     }
+    
+    func animationControllerForDismissedController(dismissed: UIViewController!) -> UIViewControllerAnimatedTransitioning! {
+        return LoginModalDismissalTransition()
+    }
 
     /*
     // #pragma mark - Navigation
