@@ -54,7 +54,7 @@ class LoginModalViewController: UIViewController {
     }
     
     func customizeView() {
-        let radius = 3.0
+        let radius:CGFloat = 3.0
         
         let paddingEmail = UIView(frame: CGRectMake(0, 0, 10, 38))
         usernameField.leftView = paddingEmail
