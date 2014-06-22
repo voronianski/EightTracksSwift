@@ -22,7 +22,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blur-bg" translatesAutoresizingMaskIntoConstraints="NO" id="5Mi-KT-ZiP">
                                 <rect key="frame" x="0.0" y="468" width="320" height="102"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8tracks internet radio client just implemented in Swift" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="177" translatesAutoresizingMaskIntoConstraints="NO" id="GKM-d4-QmZ">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8tracks internet radio client implemented in Swift lang" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="177" translatesAutoresizingMaskIntoConstraints="NO" id="GKM-d4-QmZ">
                                 <rect key="frame" x="72" y="529" width="177" height="28"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="14"/>
                                 <color key="textColor" red="0.99215686274509807" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
@@ -34,6 +34,9 @@
                                 <state key="normal" title="Use 8tracks account" backgroundImage="login-btn">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="showLogin:" destination="jpU-W7-lJ6" eventType="touchUpInside" id="sy2-7P-vQx"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="cRx-4h-5Qb">
                                 <rect key="frame" x="48" y="142" width="225" height="89"/>
@@ -46,6 +49,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rW4-yr-cp5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="347" y="371"/>
+        </scene>
+        <!--Login Modal View Controller-->
+        <scene sceneID="9ic-Wx-tez">
+            <objects>
+                <viewController storyboardIdentifier="LoginModalViewController" id="2KO-Ig-GIW" customClass="LoginModalViewController" customModule="EightTracksSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kXj-aL-wMT"/>
+                        <viewControllerLayoutGuide type="bottom" id="1B6-J8-mvQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wy8-DT-09q">
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="340"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login Form Here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQM-DS-ndx">
+                                <rect key="frame" x="76" y="159" width="128.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="280" height="340"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z7W-px-xZG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="742" y="385"/>
         </scene>
     </scenes>
     <resources>

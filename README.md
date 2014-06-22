@@ -19,6 +19,8 @@ let API_KEY = "YOUR API KEY"
 
 ### Tests
 
+### AFNetworking and Objective-C dependencies
+
 ## References
 
 - Dmitri Voronianski [@voronianski](https://twitter.com/voronianski)

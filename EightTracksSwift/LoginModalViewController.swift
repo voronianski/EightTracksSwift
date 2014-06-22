@@ -1,22 +1,24 @@
 //
-//  WelcomeViewController.swift
+//  LoginModalViewController.swift
 //  EightTracksSwift
 //
-//  Created by Dmitri Voronianski on 16.06.14.
+//  Created by Dmitri Voronianski on 21.06.14.
 //  Copyright (c) 2014 Dmitri Voronianski. All rights reserved.
 //
 
 import UIKit
 
-class WelcomeViewController: UIViewController, UIViewControllerTransitioningDelegate {
+class LoginModalViewController: UIViewController {
+    
+    var transitioningBackgroundView = UIView()
+    
+    init(coder aDecoder: NSCoder!) {
+        super.init(coder: aDecoder)
+    }
 
     init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         // Custom initialization
-    }
-    
-    init(coder aDecoder: NSCoder!) {
-        super.init(coder: aDecoder)
     }
 
     override func viewDidLoad() {
@@ -24,23 +26,18 @@ class WelcomeViewController: UIViewController, UIViewControllerTransitioningDele
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        //var gestureRecognizer =
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func showLogin(sender : AnyObject) {
-        let loginVC = self.storyboard.instantiateViewControllerWithIdentifier("LoginModalViewController") as LoginModalViewController
-        loginVC.modalPresentationStyle = UIModalPresentationStyle.Custom
-        loginVC.transitioningDelegate = self
-        
-        self.presentViewController(loginVC, animated: true, completion: nil)
-    }
-    
-    func animationControllerForPresentedController(presented: UIViewController!, presentingController presenting: UIViewController!, sourceController source: UIViewController!) -> UIViewControllerAnimatedTransitioning! {
-        return LoginModalPresentationTransition()
-    }
 
     /*
     // #pragma mark - Navigation

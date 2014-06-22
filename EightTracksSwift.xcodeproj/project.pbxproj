@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2A0CC1EF194ED94400EF48FF /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0CC1EE194ED94400EF48FF /* APIManager.swift */; };
+		2A59BCE31955F4280098E282 /* LoginModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A59BCE21955F4280098E282 /* LoginModalViewController.swift */; };
 		2A8823CF194F5830006E02F4 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8823CE194F5830006E02F4 /* WelcomeViewController.swift */; };
 		2A8823D3194F77EC006E02F4 /* ProximaNova-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2A8823D1194F77EC006E02F4 /* ProximaNova-Light.otf */; };
 		2A8823D4194F77EC006E02F4 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2A8823D2194F77EC006E02F4 /* ProximaNova-Regular.otf */; };
+		2A8B075B195740E900DF1D4A /* LoginModalPresentationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B075A195740E900DF1D4A /* LoginModalPresentationTransition.swift */; };
 		2AD22FBB194DF7DE0059718E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD22FBA194DF7DE0059718E /* AppDelegate.swift */; };
 		2AD22FBD194DF7DE0059718E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD22FBC194DF7DE0059718E /* Images.xcassets */; };
 		2AD22FC9194DF7DE0059718E /* EightTracksSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD22FC8194DF7DE0059718E /* EightTracksSwiftTests.swift */; };
@@ -33,9 +35,11 @@
 
 /* Begin PBXFileReference section */
 		2A0CC1EE194ED94400EF48FF /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		2A59BCE21955F4280098E282 /* LoginModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModalViewController.swift; sourceTree = "<group>"; };
 		2A8823CE194F5830006E02F4 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		2A8823D1194F77EC006E02F4 /* ProximaNova-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Light.otf"; sourceTree = "<group>"; };
 		2A8823D2194F77EC006E02F4 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		2A8B075A195740E900DF1D4A /* LoginModalPresentationTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModalPresentationTransition.swift; sourceTree = "<group>"; };
 		2AD22FB5194DF7DE0059718E /* EightTracksSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EightTracksSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AD22FB9194DF7DE0059718E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AD22FBA194DF7DE0059718E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				2A8823CE194F5830006E02F4 /* WelcomeViewController.swift */,
+				2A59BCE21955F4280098E282 /* LoginModalViewController.swift */,
+				2A8B075A195740E900DF1D4A /* LoginModalPresentationTransition.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -297,8 +303,10 @@
 				2A0CC1EF194ED94400EF48FF /* APIManager.swift in Sources */,
 				2A8823CF194F5830006E02F4 /* WelcomeViewController.swift in Sources */,
 				2AF0FAE9194F113400644D7B /* Config.swift in Sources */,
+				2A59BCE31955F4280098E282 /* LoginModalViewController.swift in Sources */,
 				2AF70BDA195220F300D8E904 /* ConfigSample.swift in Sources */,
 				2AF7F0A1194EEBB900A3A49E /* TestViewController.swift in Sources */,
+				2A8B075B195740E900DF1D4A /* LoginModalPresentationTransition.swift in Sources */,
 				2AD22FBB194DF7DE0059718E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
