@@ -24,4 +24,4 @@ let API_KEY = "YOUR API KEY"
 ## References
 
 - Dmitri Voronianski [@voronianski](https://twitter.com/voronianski)
-- Based on concept and art by [Ionut Zamfir](https://dribbble.com/shots/1578766-Choose-songs)
+- Based on concept and art by [Ionut Zamfir](https://dribbble.com/shots/1549755-8tracks-Featured-Tracks?list=users&offset=7)
