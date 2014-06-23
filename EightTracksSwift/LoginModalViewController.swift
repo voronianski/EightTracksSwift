@@ -75,6 +75,16 @@ class LoginModalViewController: UIViewController {
     
     @IBAction func login(sender : AnyObject) {
         // api manager request to 8tracks
+        let username = usernameField.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        let password = passwordField.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        
+        let api = APIManager.sharedInstance
+        func success(operation: AFHTTPRequestOperation!, data: AnyObject!) {
+            println(data)
+        }
+        api.login(username, password: password, success: success, { (operation: AFHTTPRequestOperation?, error: NSError?) in
+            println(operation?.responseObject)
+        })
     }
 
     @IBAction func cancel(sender : AnyObject) {

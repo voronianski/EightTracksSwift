@@ -27,6 +27,7 @@ class APIManager: AFHTTPRequestOperationManager {
         self.requestSerializer = AFJSONRequestSerializer()
         
         self.requestSerializer.setValue(API_KEY, forHTTPHeaderField: "X-Api-Key")
+        self.requestSerializer.setValue("3", forHTTPHeaderField: "X-Api-Version")
     }
     
     init(baseURL url: NSURL!) {
@@ -37,6 +38,7 @@ class APIManager: AFHTTPRequestOperationManager {
      * https://8tracks.com/developers/api_v3#user_auth
      */
     func login(username: String, password: String, success: (AFHTTPRequestOperation!, AnyObject!) -> Void, failure: ((AFHTTPRequestOperation!, NSError!) -> Void)?) {
+        println(username, password)
         self.POST(
             API_URL.stringByAppendingString("/sessions.json"),
             parameters: ["username": username, "password": password],
