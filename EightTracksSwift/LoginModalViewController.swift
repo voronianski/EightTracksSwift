@@ -79,11 +79,12 @@ class LoginModalViewController: UIViewController {
         let password = passwordField.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
         
         let api = APIManager.sharedInstance
-        func success(operation: AFHTTPRequestOperation!, data: AnyObject!) {
+        func success(operation: NSURLSessionDataTask!, data: AnyObject!) {
             println(data)
         }
-        api.login(username, password: password, success: success, { (operation: AFHTTPRequestOperation?, error: NSError?) in
-            println(operation?.responseObject)
+        api.login(username, password: password, success: success, { (operation: NSURLSessionDataTask?, error: NSError?) in
+            println(operation)
+            println(error)
         })
     }
 
