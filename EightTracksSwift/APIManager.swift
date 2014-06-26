@@ -42,9 +42,7 @@ class APIManager: AFHTTPSessionManager {
      * https://8tracks.com/developers/api_v3#user_auth
      */
     func login(username: String, password: String, success: (NSURLSessionDataTask!, AnyObject!) -> Void, failure: ((NSURLSessionDataTask!, NSError!) -> Void)?) {
-        println(username, password)
-        //let credentials = NSDictionary(objects: [username, password], forKeys: ["username", "password"]) as NSDictionary
-        var credentials = ["username": username, "password": password] as Dictionary
+        let credentials = ["login": username, "password": password]
         
         self.POST(
             API_URL.stringByAppendingString("/sessions.json"),
@@ -52,10 +50,6 @@ class APIManager: AFHTTPSessionManager {
             success: success,
             failure: failure
         )
-    }
-    
-    func loginPlain(username: String, password: String) {
-        
     }
     
     func createUser(username: String, password: String, email: String, success: (NSURLSessionDataTask!, AnyObject!) -> Void, failure: ((NSURLSessionDataTask!, NSError!) -> Void)?) {
