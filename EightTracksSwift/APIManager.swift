@@ -8,7 +8,7 @@
 
 import UIKit
 
-let _sharedAPIManager = APIManager()
+let _sharedAPIManager = APIManager(baseURL: NSURL.URLWithString(API_URL))
 
 class APIManager: AFHTTPSessionManager {
     
@@ -45,7 +45,7 @@ class APIManager: AFHTTPSessionManager {
         let credentials = ["login": username, "password": password]
         
         self.POST(
-            API_URL.stringByAppendingString("/sessions.json"),
+            "/sessions.json",
             parameters: credentials,
             success: success,
             failure: failure

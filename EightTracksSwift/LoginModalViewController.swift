@@ -80,12 +80,13 @@ class LoginModalViewController: UIViewController {
         
         let api = APIManager.sharedInstance
         func success(operation: NSURLSessionDataTask!, data: AnyObject!) {
-            println(data)
+            self.dismiss()
         }
-        api.login(username, password: password, success: success, { (operation: NSURLSessionDataTask?, error: NSError?) in
+        func failure(operation: NSURLSessionDataTask?, error: NSError?) {
             println(operation)
             println(error)
-        })
+        }
+        api.login(username, password: password, success: success, failure: failure)
     }
 
     @IBAction func cancel(sender : AnyObject) {
