@@ -13,6 +13,7 @@
 		2A8823D3194F77EC006E02F4 /* ProximaNova-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2A8823D1194F77EC006E02F4 /* ProximaNova-Light.otf */; };
 		2A8823D4194F77EC006E02F4 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2A8823D2194F77EC006E02F4 /* ProximaNova-Regular.otf */; };
 		2A8B075B195740E900DF1D4A /* LoginModalPresentationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B075A195740E900DF1D4A /* LoginModalPresentationTransition.swift */; };
+		2A92FDF0195EDF83006515CF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A92FDEF195EDF83006515CF /* User.swift */; };
 		2AD22FBB194DF7DE0059718E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD22FBA194DF7DE0059718E /* AppDelegate.swift */; };
 		2AD22FBD194DF7DE0059718E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD22FBC194DF7DE0059718E /* Images.xcassets */; };
 		2AD22FC9194DF7DE0059718E /* EightTracksSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD22FC8194DF7DE0059718E /* EightTracksSwiftTests.swift */; };
@@ -41,6 +42,7 @@
 		2A8823D1194F77EC006E02F4 /* ProximaNova-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Light.otf"; sourceTree = "<group>"; };
 		2A8823D2194F77EC006E02F4 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
 		2A8B075A195740E900DF1D4A /* LoginModalPresentationTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModalPresentationTransition.swift; sourceTree = "<group>"; };
+		2A92FDEF195EDF83006515CF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2AD22FB5194DF7DE0059718E /* EightTracksSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EightTracksSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AD22FB9194DF7DE0059718E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AD22FBA194DF7DE0059718E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				2AD22FD2194DF84B0059718E /* MainStoryboard.storyboard */,
 				2AD22FBC194DF7DE0059718E /* Images.xcassets */,
 				2AD22FB8194DF7DE0059718E /* Supporting Files */,
+				2A92FDEF195EDF83006515CF /* User.swift */,
 			);
 			path = EightTracksSwift;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				2AE7EDFF195777C2006BDBA0 /* LoginModalDismissalTransition.swift in Sources */,
 				2AF7F0A1194EEBB900A3A49E /* TestViewController.swift in Sources */,
 				2A8B075B195740E900DF1D4A /* LoginModalPresentationTransition.swift in Sources */,
+				2A92FDF0195EDF83006515CF /* User.swift in Sources */,
 				2AD22FBB194DF7DE0059718E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

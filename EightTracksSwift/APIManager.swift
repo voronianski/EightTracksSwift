@@ -22,16 +22,16 @@ class APIManager: AFHTTPSessionManager {
     
     init() {
         super.init()
+    }
+    
+    init(baseURL url: NSURL!) {
+        super.init(baseURL: url)
         
         self.responseSerializer = AFJSONResponseSerializer()
         self.requestSerializer = AFJSONRequestSerializer()
         
         self.requestSerializer.setValue(API_KEY, forHTTPHeaderField: "X-Api-Key")
         self.requestSerializer.setValue("3", forHTTPHeaderField: "X-Api-Version")
-    }
-    
-    init(baseURL url: NSURL!) {
-        super.init(baseURL: url)
     }
     
     init(baseURL url: NSURL!, sessionConfiguration configuration: NSURLSessionConfiguration!) {
@@ -54,7 +54,7 @@ class APIManager: AFHTTPSessionManager {
     
     func createUser(username: String, password: String, email: String, success: (NSURLSessionDataTask!, AnyObject!) -> Void, failure: ((NSURLSessionDataTask!, NSError!) -> Void)?) {
         self.POST(
-            API_URL.stringByAppendingString("/users.json"),
+            "/users.json",
             parameters: ["username": username, "password": password, "email": email, "agree_to_terms": true],
             success: success,
             failure: failure

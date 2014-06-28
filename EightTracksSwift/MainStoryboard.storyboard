@@ -50,6 +50,33 @@
             </objects>
             <point key="canvasLocation" x="347" y="371"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="J2f-O1-d2a">
+            <objects>
+                <viewController id="ChK-0X-Z1t" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2lI-Ut-1n8"/>
+                        <viewControllerLayoutGuide type="bottom" id="gMV-06-hsU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pIZ-70-LVd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Logged In" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iz1-MT-pZ3">
+                                <rect key="frame" x="121" y="273" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4Aa-xI-4Y4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HJ6-7A-htN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="875" y="1021"/>
+        </scene>
         <!--Login Modal View Controller-->
         <scene sceneID="9ic-Wx-tez">
             <objects>
@@ -122,7 +149,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z7W-px-xZG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="742" y="385"/>
+            <point key="canvasLocation" x="748" y="448"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3Bd-my-8c8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PYq-sY-ZDZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="edA-DR-9tt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ChK-0X-Z1t" kind="relationship" relationship="rootViewController" id="cn2-Oq-coB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fDL-jc-vr1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="343" y="1021"/>
         </scene>
     </scenes>
     <resources>

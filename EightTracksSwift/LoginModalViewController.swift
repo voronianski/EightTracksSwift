@@ -33,6 +33,12 @@ class LoginModalViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+
+        //log out for debug purposes
+        //let s = NSHTTPCookieStorage.sharedHTTPCookieStorage()
+        //println(s.cookies)
+        //s.deleteCookie(s.cookies[0] as NSHTTPCookie)
+        //println(s.cookies)
         
         var gestureRecognizer = UITapGestureRecognizer()
         transitioningBackgroundView.addGestureRecognizer(gestureRecognizer)
@@ -74,17 +80,28 @@ class LoginModalViewController: UIViewController {
     }
     
     @IBAction func login(sender : AnyObject) {
-        // api manager request to 8tracks
         let username = usernameField.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
         let password = passwordField.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
         
+        if (username.isEmpty || password.isEmpty) {
+            self.showAlert("Make sure you enter username and password!")
+            return
+        }
+        
         let api = APIManager.sharedInstance
+        let app = UIApplication.sharedApplication()
+        app.networkActivityIndicatorVisible = true
+        
         func success(operation: NSURLSessionDataTask!, data: AnyObject!) {
-            self.dismiss()
+            self.dismissViewControllerAnimated(true, {
+                app.networkActivityIndicatorVisible = false
+                println(data)
+                println("segue to an app")
+            })
         }
         func failure(operation: NSURLSessionDataTask?, error: NSError?) {
-            println(operation)
-            println(error)
+            app.networkActivityIndicatorVisible = false
+            self.showAlert("Your login was unsuccessful")
         }
         api.login(username, password: password, success: success, failure: failure)
     }
@@ -92,6 +109,14 @@ class LoginModalViewController: UIViewController {
     @IBAction func cancel(sender : AnyObject) {
         self.dismiss()
     }
+    
+    func showAlert(message: String) {
+        let alertView = UIAlertController(title: "Oops", message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        alertView.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alertView, animated: true, completion: nil)
+    }
+    
+    
     
     /*
     // #pragma mark - Navigation
