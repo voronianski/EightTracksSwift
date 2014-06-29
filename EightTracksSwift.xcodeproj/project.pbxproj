@@ -90,6 +90,14 @@
 			name = Login;
 			sourceTree = "<group>";
 		};
+		2A96DBF319602E13004CCB17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A92FDEF195EDF83006515CF /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		2AD22FAC194DF7DE0059718E = {
 			isa = PBXGroup;
 			children = (
@@ -119,7 +127,6 @@
 				2AD22FD2194DF84B0059718E /* MainStoryboard.storyboard */,
 				2AD22FBC194DF7DE0059718E /* Images.xcassets */,
 				2AD22FB8194DF7DE0059718E /* Supporting Files */,
-				2A92FDEF195EDF83006515CF /* User.swift */,
 			);
 			path = EightTracksSwift;
 			sourceTree = "<group>";
@@ -157,6 +164,7 @@
 		2AD22FD4194DF8F80059718E /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2A96DBF319602E13004CCB17 /* Models */,
 				2A0CC1EE194ED94400EF48FF /* APIManager.swift */,
 				2AF7F0A0194EEBB900A3A49E /* TestViewController.swift */,
 			);

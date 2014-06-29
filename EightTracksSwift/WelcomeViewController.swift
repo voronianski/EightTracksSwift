@@ -22,6 +22,10 @@ class WelcomeViewController: UIViewController, UIViewControllerTransitioningDele
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let user = User()
+        if (user.isLogined()) {
+            println("segue to nav controller")
+        }
         // Do any additional setup after loading the view.
     }
 
