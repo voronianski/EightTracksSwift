@@ -33,12 +33,6 @@ class LoginModalViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-
-        //log out for debug purposes
-        //let s = NSHTTPCookieStorage.sharedHTTPCookieStorage()
-        //println(s.cookies)
-        //s.deleteCookie(s.cookies[0] as NSHTTPCookie)
-        //println(s.cookies)
         
         var gestureRecognizer = UITapGestureRecognizer()
         transitioningBackgroundView.addGestureRecognizer(gestureRecognizer)
@@ -76,7 +70,7 @@ class LoginModalViewController: UIViewController {
     }
     
     func dismiss() {
-        self.dismissModalViewControllerAnimated(true)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     @IBAction func login(sender : AnyObject) {
@@ -92,10 +86,13 @@ class LoginModalViewController: UIViewController {
         let app = UIApplication.sharedApplication()
         app.networkActivityIndicatorVisible = true
         
+        println(username, password)
+        
         func success(operation: NSURLSessionDataTask!, data: AnyObject!) {
+            println("success")
             self.dismissViewControllerAnimated(true, {
                 app.networkActivityIndicatorVisible = false
-                println(data)
+                //println(data.objectForKey("user"))
                 println("segue to an app")
             })
         }

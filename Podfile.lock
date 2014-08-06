@@ -18,11 +18,17 @@ PODS:
   - AFNetworking/UIKit (2.2.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - DCKeyValueObjectMapping (1.4)
+  - HexColors (2.2.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.2.4)
+  - DCKeyValueObjectMapping
+  - HexColors
 
 SPEC CHECKSUMS:
   AFNetworking: ab63e259fe91eef4519b371ef0a4955af0e73e64
+  DCKeyValueObjectMapping: c3561709f296ddffba7768a9d7ccf234307fd3c9
+  HexColors: 01384d2bbe8dc4ffa43c3b4135db6e976952d153
 
 COCOAPODS: 0.33.1

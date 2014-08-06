@@ -3,3 +3,6 @@
 //
 
 #import <AFNetworking/AFNetworking.h>
+#import <DCKeyValueObjectMapping/DCKeyValueObjectMapping.h>
+#import <DCKeyValueObjectMapping/DCArrayMapping.h>
+#import <DCKeyValueObjectMapping/DCParserConfiguration.h>

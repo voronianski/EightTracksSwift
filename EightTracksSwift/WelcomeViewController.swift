@@ -23,6 +23,9 @@ class WelcomeViewController: UIViewController, UIViewControllerTransitioningDele
         super.viewDidLoad()
 
         let user = User()
+        
+        // for development purposes
+        user.logout()
         if (user.isLogined()) {
             println("segue to nav controller")
         }

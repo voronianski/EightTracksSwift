@@ -9,7 +9,8 @@
 import UIKit
 
 class User: NSObject {
-    let user_token:String?
+    var user_token:String?
+    var email:String?
     
     init() {
         

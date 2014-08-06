@@ -98,6 +98,13 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		2AAE84C51961E1B900637CDC /* Browse */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Browse;
+			sourceTree = "<group>";
+		};
 		2AD22FAC194DF7DE0059718E = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +128,7 @@
 		2AD22FB7194DF7DE0059718E /* EightTracksSwift */ = {
 			isa = PBXGroup;
 			children = (
+				2AAE84C51961E1B900637CDC /* Browse */,
 				2A8823CD194F57A1006E02F4 /* Login */,
 				2AD22FD4194DF8F80059718E /* Common */,
 				2AD22FBA194DF7DE0059718E /* AppDelegate.swift */,
