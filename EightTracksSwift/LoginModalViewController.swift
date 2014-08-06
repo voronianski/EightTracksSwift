@@ -10,9 +10,9 @@ import UIKit
 
 class LoginModalViewController: UIViewController {
     
-    @IBOutlet var usernameField : UITextField
-    @IBOutlet var passwordField : UITextField
-    @IBOutlet var loginButton : UIButton
+    @IBOutlet var usernameField : UITextField!
+    @IBOutlet var passwordField : UITextField!
+    @IBOutlet var loginButton : UIButton!
     
     var transitioningBackgroundView = UIView()
     
