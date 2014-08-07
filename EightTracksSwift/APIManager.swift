@@ -20,11 +20,15 @@ class APIManager: AFHTTPSessionManager {
         return _sharedAPIManager
     }
     
-    init() {
+    required init(coder aDecoder: NSCoder!) {
+        super.init(coder: aDecoder)
+    }
+    
+    override init() {
         super.init()
     }
     
-    init(baseURL url: NSURL!) {
+    override init(baseURL url: NSURL!) {
         super.init(baseURL: url)
         
         self.responseSerializer = AFJSONResponseSerializer()
@@ -34,7 +38,7 @@ class APIManager: AFHTTPSessionManager {
         self.requestSerializer.setValue("3", forHTTPHeaderField: "X-Api-Version")
     }
     
-    init(baseURL url: NSURL!, sessionConfiguration configuration: NSURLSessionConfiguration!) {
+    override init(baseURL url: NSURL!, sessionConfiguration configuration: NSURLSessionConfiguration!) {
         super.init(baseURL: url, sessionConfiguration: configuration)
     }
     

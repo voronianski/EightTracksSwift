@@ -12,7 +12,7 @@ class User: NSObject {
     var user_token:String?
     var email:String?
     
-    init() {
+    override init() {
         
     }
     
