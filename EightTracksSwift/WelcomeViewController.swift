@@ -15,7 +15,7 @@ class WelcomeViewController: UIViewController, UIViewControllerTransitioningDele
         // Custom initialization
     }
     
-    required init(coder aDecoder: NSCoder!) {
+    required init(coder aDecoder: (NSCoder!)) {
         super.init(coder: aDecoder)
     }
 
@@ -38,10 +38,10 @@ class WelcomeViewController: UIViewController, UIViewControllerTransitioningDele
     }
     
     @IBAction func showLogin(sender : AnyObject) {
-        let loginVC = self.storyboard.instantiateViewControllerWithIdentifier("LoginModalViewController") as LoginModalViewController
+        let loginVC = self.storyboard?.instantiateViewControllerWithIdentifier("LoginModalViewController") as LoginModalViewController
         loginVC.modalPresentationStyle = UIModalPresentationStyle.Custom
         loginVC.transitioningDelegate = self
-        
+
         self.presentViewController(loginVC, animated: true, completion: nil)
     }
     

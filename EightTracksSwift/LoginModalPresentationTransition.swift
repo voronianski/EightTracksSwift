@@ -10,12 +10,12 @@ import UIKit
 
 class LoginModalPresentationTransition: NSObject, UIViewControllerAnimatedTransitioning {
     
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning!) -> NSTimeInterval {
+    func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
         return 0.72
     }
     
-    func animateTransition(transitionContext: UIViewControllerContextTransitioning!) {
-        let fromVC = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)
+    func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
+        let fromVC = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey) as WelcomeViewController
         let toVC = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey) as LoginModalViewController
         
         toVC.transitioningBackgroundView.backgroundColor = UIColor.darkGrayColor()

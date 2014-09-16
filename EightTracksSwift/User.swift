@@ -20,7 +20,7 @@ class User: NSObject {
         let storage = NSHTTPCookieStorage.sharedHTTPCookieStorage()
         let cookies = NSHTTPCookieStorage.cookiesForURL(storage)(NSURL.URLWithString(API_URL))
         
-        if (cookies.count > 0) {
+        if (cookies?.count > 0) {
             return true
         }
         
@@ -31,8 +31,8 @@ class User: NSObject {
         let storage = NSHTTPCookieStorage.sharedHTTPCookieStorage()
         let cookies = NSHTTPCookieStorage.cookiesForURL(storage)(NSURL.URLWithString(API_URL))
         
-        for cookie:AnyObject in cookies {
-            storage.deleteCookie(cookie as NSHTTPCookie)
-        }
+//        for cookie:AnyObject in cookies {
+//            storage.deleteCookie(cookie as NSHTTPCookie)
+//        }
     }
 }

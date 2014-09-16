@@ -10,11 +10,11 @@ import UIKit
 
 class LoginModalDismissalTransition: NSObject, UIViewControllerAnimatedTransitioning {
    
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning!) -> NSTimeInterval {
+    func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
         return 0.72
     }
     
-    func animateTransition(transitionContext: UIViewControllerContextTransitioning!) {
+    func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
         let fromVC = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey) as LoginModalViewController
         
         let finalCenter = CGPointMake(160, (fromVC.view.bounds.size.height / 2) - 1000)
