@@ -1,34 +1,36 @@
 PODS:
-  - AFNetworking (2.2.4):
+  - AFNetworking (2.5.2):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
     - AFNetworking/UIKit
-  - AFNetworking/NSURLConnection (2.2.4):
+  - AFNetworking/NSURLConnection (2.5.2):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.2.4):
-    - AFNetworking/NSURLConnection
-  - AFNetworking/Reachability (2.2.4)
-  - AFNetworking/Security (2.2.4)
-  - AFNetworking/Serialization (2.2.4)
-  - AFNetworking/UIKit (2.2.4):
+  - AFNetworking/NSURLSession (2.5.2):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.2)
+  - AFNetworking/Security (2.5.2)
+  - AFNetworking/Serialization (2.5.2)
+  - AFNetworking/UIKit (2.5.2):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - DCKeyValueObjectMapping (1.4)
   - HexColors (2.2.1)
 
 DEPENDENCIES:
-  - AFNetworking (~> 2.2.4)
+  - AFNetworking (~> 2.5.1)
   - DCKeyValueObjectMapping
   - HexColors
 
 SPEC CHECKSUMS:
-  AFNetworking: ab63e259fe91eef4519b371ef0a4955af0e73e64
+  AFNetworking: fefbce9660acb17f48ae0011292d4da0f457bf36
   DCKeyValueObjectMapping: c3561709f296ddffba7768a9d7ccf234307fd3c9
   HexColors: 01384d2bbe8dc4ffa43c3b4135db6e976952d153
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.34.4

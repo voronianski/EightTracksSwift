@@ -8,7 +8,7 @@
 
 import UIKit
 
-let _sharedAPIManager = APIManager(baseURL: NSURL(fileURLWithPath: API_URL))
+let _sharedAPIManager = APIManager(baseURL: NSURL(string: API_URL)!)
 
 class APIManager: AFHTTPSessionManager {
     
@@ -24,22 +24,14 @@ class APIManager: AFHTTPSessionManager {
         super.init(coder: aDecoder)
     }
     
-    override init() {
-        super.init()
-    }
-    
-    override init(baseURL url: NSURL!) {
-        super.init(baseURL: url)
+    init(baseURL url: NSURL!) {
+        super.init(baseURL: url, sessionConfiguration: nil)
         
         self.responseSerializer = AFJSONResponseSerializer() as AFJSONResponseSerializer
         self.requestSerializer = AFJSONRequestSerializer() as AFJSONRequestSerializer
         
         self.requestSerializer.setValue(API_KEY, forHTTPHeaderField: "X-Api-Key")
         self.requestSerializer.setValue("3", forHTTPHeaderField: "X-Api-Version")
-    }
-    
-    override init(baseURL url: NSURL!, sessionConfiguration configuration: NSURLSessionConfiguration!) {
-        super.init(baseURL: url, sessionConfiguration: configuration)
     }
     
     /**
