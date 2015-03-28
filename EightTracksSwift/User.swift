@@ -18,7 +18,8 @@ class User: NSObject {
     
     func isLogined() -> Bool {
         let storage = NSHTTPCookieStorage.sharedHTTPCookieStorage()
-        let cookies = NSHTTPCookieStorage.cookiesForURL(storage)(NSURL.URLWithString(API_URL))
+        let apiURL = NSURL(string: API_URL)
+        let cookies = NSHTTPCookieStorage.cookiesForURL(storage)(apiURL!)
         
         if (cookies?.count > 0) {
             return true
@@ -29,7 +30,8 @@ class User: NSObject {
     
     func logout() {
         let storage = NSHTTPCookieStorage.sharedHTTPCookieStorage()
-        let cookies = NSHTTPCookieStorage.cookiesForURL(storage)(NSURL.URLWithString(API_URL))
+        let apiURL = NSURL(string: API_URL)
+        let cookies = NSHTTPCookieStorage.cookiesForURL(storage)(apiURL!)
         
 //        for cookie:AnyObject in cookies {
 //            storage.deleteCookie(cookie as NSHTTPCookie)
