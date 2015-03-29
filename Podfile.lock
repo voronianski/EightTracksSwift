@@ -1,11 +1,11 @@
 PODS:
   - AFNetworking (2.5.2):
-    - AFNetworking/NSURLConnection
-    - AFNetworking/NSURLSession
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-    - AFNetworking/UIKit
+    - AFNetworking/NSURLConnection (= 2.5.2)
+    - AFNetworking/NSURLSession (= 2.5.2)
+    - AFNetworking/Reachability (= 2.5.2)
+    - AFNetworking/Security (= 2.5.2)
+    - AFNetworking/Serialization (= 2.5.2)
+    - AFNetworking/UIKit (= 2.5.2)
   - AFNetworking/NSURLConnection (2.5.2):
     - AFNetworking/Reachability
     - AFNetworking/Security
@@ -24,7 +24,7 @@ PODS:
   - HexColors (2.2.1)
 
 DEPENDENCIES:
-  - AFNetworking (~> 2.5.1)
+  - AFNetworking (~> 2.5.2)
   - DCKeyValueObjectMapping
   - HexColors
 
@@ -33,4 +33,4 @@ SPEC CHECKSUMS:
   DCKeyValueObjectMapping: c3561709f296ddffba7768a9d7ccf234307fd3c9
   HexColors: 01384d2bbe8dc4ffa43c3b4135db6e976952d153
 
-COCOAPODS: 0.34.4
+COCOAPODS: 0.36.1
